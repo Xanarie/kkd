@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #030B38;
+    font-family: 'Quicksand', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.logo{
+    font-size: 2vw;
+    color: #ea48bc;
+    padding: 50px;
+}
+/*MEET THE TEAM*/
+
+.Team{
+    color: azure;
+    text-align: center;
+}
+h2{
+    padding-bottom: 15px;
+    font-size: 6vw;
+}
+p{
+    font-size: 2vw;
+    color: #ea48bc;
+}
+
+/* About Section */
+.member_images {
+    padding-top: 2%;
+    display: flex;
+}
+
+.img-container {
+    position: relative;
+    width: 25%;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.img-container:hover img {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+.member_name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.img-container:hover .member_name {
+    opacity: 1;
+}
+
+.member_images:hover .img-container:not(:hover) img {
+    opacity: 0.5;
+}
+
+/*KEYSKILLS*/
+.Keyskills {
+    position:relative;
+    margin-top: 5%;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 3% 0;
+    text-align: center;
+}
+
+#text {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.skills {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills li {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    font-size: 1em; 
+}
+
